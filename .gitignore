@@ -1,0 +1,15 @@
+# Project-specific reference materials (not part of the template)
+refs/*
+!refs/README.md
+
+# Project-specific plans and reports (generated per-project)
+plans/*
+!plans/.gitkeep
+
+reports/*
+!reports/.gitkeep
+
+# STATUS.md content is project-specific, but we keep the template
+# (rename STATUS.template.md → STATUS.md when starting a new project)
+STATUS.md
+CLAUDE.md
