@@ -78,6 +78,18 @@ A concrete, ordered checklist. Each task should be atomic and verifiable.
 [Any design guidance, trade-offs to be aware of, or edge cases to watch for.
  Keep it brief — the implementer (Claude via /dev) should make detailed decisions autonomously and document them in the report.]
 
+## Notes to Generate
+
+[Optional. If this plan involves analysis, comparison, or experiments whose findings
+ should be captured as a standalone technical note, specify it here.
+ The /dev executor will generate the note under `.claude/notes/` upon completion.]
+
+- **Note topic**: [What the note should summarize]
+- **Note focus**: [What question it should answer or what comparison it should present]
+- **Data sources**: [Which experiment outputs, metrics, or logs to draw from]
+
+[If no note is needed for this plan, write "None — no standalone note for this iteration."]
+
 ## Out of Scope
 
 [Explicitly list things that are NOT part of this iteration, especially if the task description is broad. This prevents scope creep during /dev execution.]
