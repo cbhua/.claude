@@ -29,6 +29,7 @@ Execute the development plan specified in `.claude/plans/$1.md`.
 - Provide a brief summary of what was done and any deviations from the plan.
 - List any new issues discovered during implementation.
 - Generate the report under the `.claude/reports/` folder with the same name of the plan (i.e. `$1.md`) under the following instruction:
+- Run `/notify` with a summary pointing to the report path.
 
 ```markdown
 # Report: [report name]

@@ -49,6 +49,7 @@ uv pip install -r requirements.txt
 |---------|-------|-------------|
 | `/plan <task>` | `/plan Implement something` | Generate plan under the `.claude/plans/` with the task description |
 | `/dev <version>` | `/dev v3.task` | Execute the plan in `.claude/plans/v3.task.md` |
+| `/notify [note]` | `/notify experiment finished` | Send a Telegram summary of the just-completed task |
 
 ---
 
@@ -78,6 +79,22 @@ When you need to understand or modify a specific aspect:
 | See what was done before | `.claude/reports/vN.md` |
 | Understand the source code | `src/` |
 | Reference baseline approach | `.claude/refs/` (see `refs/README.md`) |
+
+## Notifications
+
+This session runs on a remote server across multiple tmux windows. Use `/notify` 
+to ping Telegram when a long task ends — I can't watch all sessions at once.
+
+**Auto-run `/notify` when finishing**:
+- Any `/dev vN` execution (after the report is written)
+- Plan-driven or multi-step tasks (>~5 real tool calls)
+- Long-running training, eval, or batch jobs
+
+**Don't notify for**: quick lookups, small single-file edits, clarifying 
+questions, or mid-task progress. When unsure, skip it.
+
+The summary should be terse: what was done, the result, and any follow-up I 
+should know. Always includes project + tmux context automatically.
 
 ---
 
