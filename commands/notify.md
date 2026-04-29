@@ -10,8 +10,8 @@ Send a Telegram notification to summarize the task you just completed in this se
 
 1. Write a concise summary (2-5 short lines, markdown allowed) of what was accomplished. Focus on:
    - What was the goal
-   - Key changes/results (files touched, experiments run, conclusions)
-   - Any follow-ups the user should know about
+   - Key changes/results (sections rewritten, citations added, decisions made, page count)
+   - Any follow-ups the user should know about (open TODOs, reviewer points still unaddressed)
    
    If the user provided extra context in `$ARGUMENTS`, weight your summary toward that focus.
 
