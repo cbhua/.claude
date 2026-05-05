@@ -57,6 +57,8 @@ Sections are split into one file each so a `/dev` iteration can rewrite a single
 - **Math notation lives in `macros.tex`.** Never inline `\mathbf{x}` in section files — define `\xvec` once and use it everywhere.
 - **Citations**: `\citep{key}` for parenthetical, `\citet{key}` for textual (natbib). Prefer not starting a sentence with a citation.
 - **Non-breaking ties** between text and reference: `Section~\ref{...}`, `Table~\ref{...}` (cleveref handles this automatically when used).
+- **NO em dash**: do NOT write any sentence with "---", this is unnature in writing style. 
+- **NO textbf**: without clear requirement (clearly say like "make this bold"), do NOT use any `\textbf`. 
 
 ### BibTeX
 - One entry per paper in `bib/refs.bib`.
